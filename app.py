@@ -22,6 +22,7 @@ def handle_message(message):
         to_client['type'] = 'normal'
     send(to_client, broadcast=True)
 
+
 if __name__ == '__main__':
     # app.run()
     socketio.run(app, debug=True, port=5000)
